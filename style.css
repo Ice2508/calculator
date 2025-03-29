@@ -91,6 +91,7 @@ body {
   }
   .buttons {
   	width: 94%;
+  	column-gap: 14px;
   }
   .display {
   	width: 94%;
