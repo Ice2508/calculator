@@ -45,11 +45,11 @@ button.forEach(btn => {
                 }
             }
             if (!isFinite(res)) {
-                   display.textContent = 'Деление на ноль';
+                   display.textContent = 'Ошибка';
                    res = '';
                 }
             } catch {
-            	display.textContent = "Ошибка ввода";
+            	display.textContent = "Ошибка";
             }
         }
     });
