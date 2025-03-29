@@ -86,7 +86,7 @@ body {
 @media (max-width: 820px) {
   .wrap {
   	width: 99%;
-  	height: 96vh;
+  	height: 97vh;
   	margin: 0 auto;
   }
   .buttons {
@@ -94,5 +94,6 @@ body {
   }
   .display {
   	width: 94%;
+  	margin: 20px auto;
   }
 }
