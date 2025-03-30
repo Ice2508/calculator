@@ -27,7 +27,7 @@ body {
 
 .calc {
 	width: 85%;
-	height: 93vh;
+	height: 95%;
   background: #616161;
   border-radius: 50px;
 }
@@ -80,6 +80,11 @@ body {
 	color: #484f52;
 }
 
+.button:hover {
+	background: green;
+	color: white;
+}
+
 .clear {
 	background: #ff5151;
 }
@@ -95,25 +100,18 @@ body {
 }
 
 @media (max-width: 1400px) {
-	.buttons {
-		gap: 25px 15px;
-		padding: 20px 0;
+	.wrap {
+		width: 560px;
 	}
-
+	.buttons {
+		gap: 23px 26px;
+		padding: 23px 0;
+	}
+	.button {
+		font-size: 38px;
+	}
+	.display {
+		font-size: 60px;
+	}
 }
 
-@media (max-width: 1100px) {
-  body {
-  	overflow: hidden;
-  }
-  .wrap {
-  	height: 100vh;
-  }
-
-  .buttons {
-  	gap: 20px 15px;
-  }
-  .button {
-  	font-size: 40px;
-  }
-}
