@@ -8,15 +8,19 @@ let initialValue = null;
 let percentValue = null;
 button.forEach(btn => {
     btn.addEventListener('click', () => {
-        if (!btn.classList.contains('percent') && !btn.classList.contains('primary') && !btn.classList.contains('clear')) {
+        if (!btn.classList.contains('sqrt') &&!btn.classList.contains('percent') && !btn.classList.contains('primary') && !btn.classList.contains('clear')) {
             res += btn.innerHTML;
             display.textContent = res;
             if (percentFlag) {
                 percentValue = Number(res);
 
             }
-
         }
+         if (btn.classList.contains('sqrt')) {
+            res = Math.sqrt(res);
+            res = Number(res.toFixed(6));
+            display.textContent = res;
+         }
         if (btn.classList.contains('clear')) {
             display.textContent = 0;
             res = '';
@@ -35,8 +39,8 @@ button.forEach(btn => {
         if (btn.classList.contains('primary')) {
            try {
             if (res.trim() !== '') {
-                res = parseFloat(eval(res).toFixed(10));
-
+                res = eval(res);
+                res = Number(res.toFixed(6));
                 display.textContent = res;
                 if (percentFlag) {
                     res = (initialValue / 100) * percentValue;
